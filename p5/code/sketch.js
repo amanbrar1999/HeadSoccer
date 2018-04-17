@@ -16,7 +16,7 @@ function stadium(){
   fill('white');
   rect(0,canvasHeight-floorThickness-goalHeight,goalWidth,goalHeight,goalWidth/2, 0, 0, 0);
   // goal 2
-  rect(canvasWidth-goalWidth,canvasHeight-floorThickness-goalHeight,goalWidth,goalHeight,0,0,0,0);
+  rect(canvasWidth-goalWidth,canvasHeight-floorThickness-goalHeight,goalWidth,goalHeight,0,goalWidth/2,0,0);
 }
 
 function setup() {
@@ -30,5 +30,5 @@ function setup() {
 function draw() {
 
   player1.updatePosition();
-  player2.updatePosition();
+  //player2.updatePosition();
 }
